@@ -12,14 +12,14 @@
 
 ## 项目结构：
 + ImageActiveX：
-	1. 插件功能项目
-	2. 只有基础的3个功能代码，如果需要其他方法可自行扩展
+	插件功能项目
+	只有基础的3个功能代码，如果需要其他方法可自行扩展
 + ImageActiveXSetUp：
-	1. 插件安装包项目
+	插件安装包项目
 + 测试网页：
-	1. MyActiveXTest.html:用于测试ActiveX功能
+	MyActiveXTest.html:用于测试ActiveX功能
 + 插件安装包：
-	1. ImageActiveXSetUp编译的插件安装包 可直接安装用于测试使用
+	ImageActiveXSetUp编译的插件安装包 可直接安装用于测试使用
 
 ## 插件功能测试：
 1. 解压ImageActiveXSetUp.zip
