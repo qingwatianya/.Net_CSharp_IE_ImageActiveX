@@ -14,13 +14,12 @@
 + ImageActiveX（dll插件功能项目）：
    1. 项目右击应用程序->属性->应用程序->程序集信息->然后选中“使程序集COM可见”，如下图所示：
    2. 项目右击应用程序->属性->生成->然后选中“为COM互操作注册”
-   3. 注意：Main.class 顶部的[Guid("E52C3E70-B486-4743-B8AE-5D830A561442")] 用于插件注入的标识 可以自己创建一个
+   3. 注意：Main.class 顶部的[Guid("E52C3E70-B486-4743-B8AE-5D830A561442")] 用于插件注册标识 可以自己创建
    4. 只有基础的3个功能代码，如果需要其他方法可自行扩展
 + ImageActiveXSetUp(插件安装包项目)：
 	1. 菜单扩展->管理扩展->搜索安装：Microsoft Visual Studio Installer Projects
 	2. 新建项目选择：“SetUp Project” 或者 “安装项目”；
-	3. 项目右键->添加(Add)->项目输出->项目：选择ImageActiveX插件项目
-	![截图1](https://github.com/qingwatianya/.Net_CSharp_IE_ImageActiveX/blob/master/ImageActiveX/%E6%88%AA%E5%9B%BE/%E6%9C%80%E7%BB%88%E7%BB%93%E6%9E%9C.png "测试")
+	3. 项目右键->添加(Add)->项目输出->项目：选择ImageActiveX插件项目	
 + 测试网页：
 	1. MyActiveXTest.html:用于测试ActiveX功能
 + 截图：
@@ -33,3 +32,6 @@
 1. 解压ImageActiveXSetUp.zip
 2. 安装Setup.exe->选择“任何人”
 3. 用IE浏览器打开MyActiveXTest.html 点击功能按钮测试
+
+## 最终测试效果：
+![截图1](https://github.com/qingwatianya/.Net_CSharp_IE_ImageActiveX/blob/master/ImageActiveX/%E6%88%AA%E5%9B%BE/%E6%9C%80%E7%BB%88%E7%BB%93%E6%9E%9C.png "测试")
