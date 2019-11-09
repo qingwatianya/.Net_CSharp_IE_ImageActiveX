@@ -11,13 +11,20 @@
 **主要适合IE浏览器，其他的浏览器不兼容，出于安全考虑现在的浏览器基本上都限制了ActiveX插件功能**
 
 ## 项目结构：
-+ ImageActiveX：
-   1. 插件功能项目
-   2. 只有基础的3个功能代码，如果需要其他方法可自行扩展
-+ ImageActiveXSetUp：
-	1. 插件安装包项目
++ ImageActiveX（dll插件功能项目）：
+   1. 项目右击应用程序->属性->应用程序->程序集信息->然后选中“使程序集COM可见”，如下图所示：
+   2. 项目右击应用程序->属性->生成->然后选中“为COM互操作注册”
+   3. 注意：Main.class 顶部的[Guid("E52C3E70-B486-4743-B8AE-5D830A561442")] 用于插件注入的标识 可以自己创建一个
+   4. 只有基础的3个功能代码，如果需要其他方法可自行扩展
++ ImageActiveXSetUp(插件安装包项目)：
+	1、 菜单扩展->管理扩展->搜索安装：Microsoft Visual Studio Installer Projects
+	2、 新建项目选择：“SetUp Project” 或者 “安装项目”；
+	3、 项目右键->添加(Add)->项目输出->项目：选择ImageActiveX插件项目
 + 测试网页：
 	1. MyActiveXTest.html:用于测试ActiveX功能
++ 截图：
+	1、ImageActiveX、ImageActiveXSetUp 项目核心配置截图
+	2、最终效果截图
 + 插件安装包：
 	1. ImageActiveXSetUp编译的插件安装包 可直接安装用于测试使用
 

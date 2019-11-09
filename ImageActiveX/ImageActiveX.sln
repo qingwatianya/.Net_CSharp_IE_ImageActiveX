@@ -9,6 +9,9 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ImageActiveXSetUp", "ImageA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2B606AA8-AE99-4356-B3C6-629A77028155}"
 	ProjectSection(SolutionItems) = preProject
+		截图\Activex_Project_Sets_01.png = 截图\Activex_Project_Sets_01.png
+		截图\Activex_Project_Sets_02.png = 截图\Activex_Project_Sets_02.png
+		截图\ImageActiveX.png = 截图\ImageActiveX.png
 		测试网页\MyActiveXTest.html = 测试网页\MyActiveXTest.html
 		..\ReadMe.md = ..\ReadMe.md
 	EndProjectSection
