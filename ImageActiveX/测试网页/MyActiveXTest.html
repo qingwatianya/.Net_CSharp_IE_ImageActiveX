@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        //插件安装成功之后，就可以使用这种方式进行检测
+        function SayHello() {
+            try {
+				//实例化插件
+                var test = new ActiveXObject("ImageActiveX.Main");
+                if (test == undefined)
+                { alert("初始化失败"); }
+                else
+                { alert(test.SayHello());  }
+            }
+            catch (e) {
+                console.log(e);
+            }
+        }
+		function SetData() {
+            try {
+                var test = new ActiveXObject("ImageActiveX.Main");
+                if (test == undefined)
+                { alert("初始化失败"); }
+                else
+                { alert(test.SetData("这是浏览器输入原样返回"));  }
+            }
+            catch (e) {
+                console.log(e);
+            }
+        }
+		//从客户端系统直接获取图片的Base64编码
+		function LoadImg() {
+            try {
+                var test = new ActiveXObject("ImageActiveX.Main");
+                if (test == undefined)
+                { alert("初始化失败"); }
+                else
+                { 
+				   let tmpPath=document.getElementById('001').value;
+					let tmpBase64=test.Image_GetBase64(tmpPath);
+					document.getElementById('showBase64Img').src='data:image/png;base64,' + tmpBase64;
+				}
+            }
+            catch (e) {
+                console.log(e);
+            }
+        }
+    </script>
+</head>
+<body>
+	<!--引用插件：浏览器会根据ClassID检测对应插件是否已经注册，没有注册提示下载指定网路路径的setup.exe文件；由于本插件没有UI 所以width height都设置为0即可-->
+    <object classid="CLSID:E52C3E70-B486-4743-B8AE-5D830A561443" codebase="setup.exe" id="abc" width="0" height="0"></object>	
+    
+	<input type="button" value="调用SayHello()" onclick="SayHello()" /> 
+	
+	<input type="button" value="调用SetData(str msg)" onclick="SetData()" /> 
+	
+	<br/>
+	<br/>
+	输入客户端本地图片路径：
+	<input id="001" type="text" value="D:\\duoduo.png" ></input>
+	<input type="button" value="加载客户端电脑文件测试" onclick="LoadImg()" /> 
+	<br/>
+	<br/>
+	
+	<!--展示最终从客户端本地加载的图片-->
+	<img id='showBase64Img' src='' width="762px" height="702px" />
+</body>
+</html>
