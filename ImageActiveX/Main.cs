@@ -38,7 +38,7 @@ namespace ImageActiveX
     ///H5中引用方法：<object classid="CLSID:E52C3E70-B486-4743-B8AE-5D830A561442" codebase="plugin/ActiveXsetup.exe" id="abc" width="0" height="0"></object> 
     ///IE浏览器会自动检测系统是否有 classid对应的注册应用  如果没有会有提示下载安装 ActiveXsetup.exe 
     /// </summary>
-    [Guid("E52C3E70-B486-4743-B8AE-5D830A561443")]
+    [Guid("E52C3E70-B486-4743-B8AE-5D830A561442")]
     public partial  class Main : IObjectSafety
     {
 
