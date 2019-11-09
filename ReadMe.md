@@ -34,4 +34,4 @@
 3. 用IE浏览器打开MyActiveXTest.html 点击功能按钮测试
 
 ## 最终测试效果：
-![IE调用ActiveX测试效果](https://github.com/qingwatianya/.Net_CSharp_IE_ImageActiveX/blob/master/ImageActiveX/%E6%88%AA%E5%9B%BE/%E6%9C%80%E7%BB%88%E7%BB%93%E6%9E%9C.png "测试")
+![IE调用ActiveX测试效果](https://github.com/qingwatianya/.Net_CSharp_IE_ImageActiveX/blob/master/ImageActiveX/%E6%88%AA%E5%9B%BE/%E6%9C%80%E7%BB%88%E7%BB%93%E6%9E%9C.png "IE调用ActiveX测试效果")
